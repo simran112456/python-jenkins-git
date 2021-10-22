@@ -29,10 +29,10 @@ print(reduce(lambda price1, price2 : price1+price2,(map(lambda p : p['price'],fi
 
 myFunc()
 
-print(list(filter(lambda product: product['price'] > 100000.0,products)))
-print(list(map(lambda p : p ['price'],filter(lambda product: product['price'] > 100000.0,products))))
+#print(list(filter(lambda product: product['price'] > 100000.0,products)))
+#print(list(map(lambda p : p ['price'],filter(lambda product: product['price'] > 100000.0,products))))
 #print(functools.reduce(lambda i,j : i if i<j else j,(list(map(lambda p:p['price'],(filter(lambda product:product['price']>10000.0,products)))))))
 #print(functools.reduce(lambda i,j : i if i>j else j,(list(map(lambda p:p['price'],(filter(lambda product:product['price']>10000.0,products)))))))
 
-print(functools.reduce(lambda i,j : i if i>j else j,(list(map(lambda p:p['price'],(filter(lambda product:product['price']>100000.0,products)))))))
-print(functools.reduce(lambda i,j : i if i<j else j,(list(map(lambda p:p['price'],(filter(lambda product:product['price']>100000.0,products)))))))
+#print(functools.reduce(lambda i,j : i if i>j else j,(list(map(lambda p:p['price'],(filter(lambda product:product['price']>100000.0,products)))))))
+#print(functools.reduce(lambda i,j : i if i<j else j,(list(map(lambda p:p['price'],(filter(lambda product:product['price']>100000.0,products)))))))
